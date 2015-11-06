@@ -3,7 +3,7 @@
 *
 * myteam
 *
-* @Versão 1.0
+* @Versão 2.0
 * @Licença http://opensource.org/licenses/gpl-license.php GNU Public License
 *
 */
@@ -68,12 +68,19 @@ $dados = mysql_fetch_assoc(mysql_query('select * from '.appTabela.' where id = "
 	</form>
 </div>
 
-	<script>
-		tinyMCE.init({
-			// General options
-			mode : "textareas",
-			theme : "lliure",
-		});
+<script>
+	tinymce.init({
+		selector: "textarea",
+		plugins: [
+				"advlist autolink autosave link lists hr",
+				"code fullscreen nonbreaking"
+		],
+
+		toolbar1: "bold italic underline strikethrough removeformat | alignleft aligncenter alignright alignjustify | bullist numlist | link unlink | code",
 		
+		menubar: false,
+		toolbar_items_size: 'small'
+	});
+	
 	ajustaForm();
 </script>

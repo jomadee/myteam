@@ -3,7 +3,7 @@
 *
 * myteam
 *
-* @Versão 1.0
+* @Versão 2.0
 * @Licença http://opensource.org/licenses/gpl-license.php GNU Public License
 *
 */
